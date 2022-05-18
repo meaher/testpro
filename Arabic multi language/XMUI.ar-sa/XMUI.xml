@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--_SIG=aOv6ovo3dxLsR30xyKaP2X8g7X1xymvt+Eqp9+gc9K00vMe+DFGCxTY1c5WGUIUyF1MZckavrB7fn7i4/kFGDM/hI3KOJLS7G9YOi9CSeTlrx5zlIvSsEXq3uo/eOLWVGSJ4hnAB5n7wdQTAfCjqxZ7irnSjyDg+rW5P5QzGBSY=-->
+<Package Id="XMUI.ar-sa" Type="MSI" Path="XMUI.MSI" Version="1.0" ProductCode="{90120000-0101-0401-0000-0000000FF1CE}" MSIVersion="12.0.4518.1014" Platform="x86">
+	<Feature Id="Gimme_OnDemandData" Cost="0">
+		<OptionRef Id="Gimme_OnDemandData"/>
+	</Feature>
+	<Feature Id="SetupXmlFiles" Cost="1868">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="SetupControllerFiles" Cost="1868">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="MsoInstalledPackagesScopedIntl_1025" Cost="0">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+</Package>

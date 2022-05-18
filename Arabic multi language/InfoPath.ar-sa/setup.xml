@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--_SIG=O2DOE33lBmYXIFeaYuJtAxJLvM5aFjw85WAe5Bbj8wZ0LXNUJOP1h3lhhMiaoUWnb2P7v7/rClpVtDMrp7VVLS1THKOu7+AONfVYDQcPqoKhgR5+ujVEiIj7ROqtCqOgs25fwfFrIgk1057ZzdPP0lcqI05ad4QXEsSgzapCKkE=-->
+<Setup Id="InfoPath.ar-sa" Type="AddOn" Keyword="InfoPathMUI" Culture="ar-sa">
+	<Option Id="AlwaysInstalled" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="yes" Hidden="yes"/>
+	<Option Id="Gimme_OnDemandData" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="yes" Hidden="yes"/>
+	<Option Id="ProductFiles" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="no">
+		<Option Id="XDOCSFiles" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no">
+			<Option Id="XDocs_PIA" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="yes" PreReq="NetFW11Minimum">
+				<Option Id="XDocsProgrammabilityFiles" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="yes" PreReq="NetFW20">
+					<Option Id="VSTAIDEFiles" DefaultState="Absent" DisallowAbsent="no" DisallowAdvertise="yes" PreReq="NetFW20"/>
+				</Option>
+			</Option>
+			<Option Id="XDOCSHelpFiles" DefaultState="FollowParent" DisallowAbsent="yes" DisallowAdvertise="no" Hidden="yes"/>
+			<Option Id="XDocsSamples" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no">
+				<Option Id="XDocsSolutionSamples" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="yes"/>
+				<Option Id="XDocsSolutionsFiles" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no">
+					<Option Id="XDocsSolutionAbsenceRequest" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionApplicantRating" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionAssetTracking" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionChangeOrder" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionExpenseReport" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionExpenseReportDom" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionInvoiceMultiTaxRates" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionInvoiceRequest" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionInvoiceSingleTaxRate" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionIssueTrackingDtl" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionIssueTrackingSimple" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionMeetingAgenda" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionPerformanceReview" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionProjectPlan" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionPurchaseOrder" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionPurchaseRequest" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionResume" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionSalesReport" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionServiceRequest" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionStatusReport" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionTimeCardDetailed" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionTimeCardSimple" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionTravelItinerary" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionTravelRequest" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+					<Option Id="XDocsSolutionVendorInformation" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+				</Option>
+			</Option>
+		</Option>
+	</Option>
+	<PackageRef Path="InfoPathMUI.xml"/>
+	<LocalCache DownloadCode="{90120000-0044-0401-0000-0000000FF1CE}" SkuComponentDirectory="InfoPath.ar-sa">
+		<File Id="InfoPathMUI.xml" MD5="B2EC954256619CA56239A98DF7D92BF1" Size="4485" RelativeCachePath="InfoPathMUI.xml" RelativeSourcePath="InfoPathMUI.xml"/>
+		<File Id="InfoPathMUI.msi" MD5="8C90CBB0450189CD3EB96AC2B776B0A7" Size="2326528" RelativeCachePath="InfoPathMUI.msi" RelativeSourcePath="InfoPathMUI.msi"/>
+		<File Id="InfLR.cab" MD5="B17775B71CC50E5D2068F6AFB6D61832" Size="27597574" RelativeCachePath="InfLR.cab" RelativeSourcePath="InfLR.cab"/>
+		<File Id="Setup.xml" MD5="" Size="" RelativeCachePath="Setup.xml" RelativeSourcePath="Setup.xml"/>
+	</LocalCache>
+</Setup>

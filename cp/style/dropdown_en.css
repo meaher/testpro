@@ -1,0 +1,9 @@
+.dropdown {padding:0; margin:0;}
+.dropdown dt {cursor:hand; font-family: Tahoma; font-size: 9pt; color: #FFFFFF;}
+.dropdown dd {position:absolute; overflow:hidden; width:190px; display:none; opacity:0;float:left ;padding:0; margin:0;}
+.dropdown ul {width:190px; border:1px solid #50032F; list-style:none ;padding:0; margin:0;}
+.dropdown li {display:inline ;padding:0; margin:0;}
+
+.dropdown a, .dropdown a:active, .dropdown a:visited {display:block; padding:5px; font-family: Tahoma; font-size: 9pt; color: #FFFFFF; text-decoration: none; background:#760A43; width:188px}
+.dropdown a:hover {background:#5E0438; color:#FFFFFF; text-decoration: none; }
+.dropdown .underline {border-bottom:1px solid #50032F; color:#FFFFFF}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--_SIG=rffYRVagn2En4h/9+TE4TASzEcr5nT0mYD+e1g7/kA1hqzKWEU28ORC58Q4jw7ZL32mBEOEGfLrvgtoRsdeXTitWe+t1ck24fZnCW3d/3xwxNBB18ix1t2nzp573qd8BtGn+Osgaqa2SzjB20su967thtlm/JNeDDSyhxJaTA3A=-->
+<Package Id="PublisherMUI.ar-sa" Type="MSI" Path="PublisherMUI.MSI" Version="1.0" ProductCode="{90120000-0019-0401-0000-0000000FF1CE}" MSIVersion="12.0.4518.1014" Platform="x86">
+	<Feature Id="PubCoreWizardFilesIntl_1025" Cost="851288">
+		<OptionRef Id="PubPrimary"/>
+	</Feature>
+	<Feature Id="PublisherHelpFilesIntl_1025" Cost="8706355">
+		<OptionRef Id="PublisherHelpFiles"/>
+	</Feature>
+	<Feature Id="Gimme_OnDemandData" Cost="0">
+		<OptionRef Id="Gimme_OnDemandData"/>
+	</Feature>
+	<Feature Id="MsoInstalledPackagesScopedIntl_1025" Cost="0">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="PublisherFontSchemesIntl_1025" Cost="6833303">
+		<OptionRef Id="PublisherFontSchemes"/>
+	</Feature>
+	<Feature Id="PubPrimaryIntl_1025" Cost="6082352">
+		<OptionRef Id="PubPrimary"/>
+	</Feature>
+	<Feature Id="SetupControllerFiles" Cost="2971">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="SetupXmlFiles" Cost="2971">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+</Package>

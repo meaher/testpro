@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--_SIG=+StsLw/0GN4/cIGJJRQ6hRCBqGEdLs9rEXBPZsP6gCAKc8qINfv8ptfm6UN7hOx7NzssGuh63BaCkUnHo7ECYMydhPMpSd7+XF/Skd/fZbhREsBaXt6/8qPHYaw75aKjx4esNvDe8RLMIkFY2H+6SahUYBT5sGgnWAiar4MSh0U=-->
+<Setup Id="SharePointDesigner.ar-sa" Type="AddOn" Keyword="SharePointDesignerMUI" Culture="ar-sa">
+	<Option Id="AlwaysInstalled" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="yes" Hidden="yes"/>
+	<Option Id="Gimme_OnDemandData" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="yes" Hidden="yes"/>
+	<Option Id="ProductFiles" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="no">
+		<Option Id="WAC_SPD" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no">
+			<Option Id="WAC_HelpFiles_SPD" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="no" Hidden="Yes"/>
+			<Option Id="VisualStudio_PreviewServer_SPD" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no" PreReq="NetFW20"/>
+		</Option>
+		<Option Id="WAC" DefaultState="Absent" DisallowAbsent="no" DisallowAdvertise="no" Hidden="yes">
+			<OptionDependency Lead="WAC_EWD"/>
+			<OptionDependency Lead="WAC_FPAC"/>
+			<OptionDependency Lead="WAC_SPD"/>
+		</Option>
+	</Option>
+	<PackageRef Path="SharePointDesignerMUI.xml"/>
+	<LocalCache DownloadCode="{90120000-0017-0401-0000-0000000FF1CE}" SkuComponentDirectory="SharePointDesigner.ar-sa">
+		<File Id="SharePointDesignerMUI.xml" MD5="351DEFFC7CBE98A43D5F9FBB7521E32A" Size="1556" RelativeCachePath="SharePointDesignerMUI.xml" RelativeSourcePath="SharePointDesignerMUI.xml"/>
+		<File Id="SharePointDesignerMUI.msi" MD5="167D53BC945633437F84C36CBD799B7A" Size="1705472" RelativeCachePath="SharePointDesignerMUI.msi" RelativeSourcePath="SharePointDesignerMUI.msi"/>
+		<File Id="SPDLR.cab" MD5="ADB2ED2601B6566C07896ABC9C01FB43" Size="11691454" RelativeCachePath="SPDLR.cab" RelativeSourcePath="SPDLR.cab"/>
+		<File Id="Setup.xml" MD5="" Size="" RelativeCachePath="Setup.xml" RelativeSourcePath="Setup.xml"/>
+	</LocalCache>
+</Setup>

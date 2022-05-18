@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--_SIG=niNdAhOyYoBrAaBjBS2OFSSNih5jJmWdgJ/sy8lBQLMxKMrfxh5mk1rMFPcnlW2uADwNnGZ39zzdv+3zgfCD7setpGtazlyGU0BcCHsrNCMaPEZCtUWoPyxyi06TAmjiNaYzmFVKXduPxXZOY/gJldbMKD+TDjLeDaiJkrRKZi8=-->
+<Package Id="VisMUI.ar-sa" Type="MSI" Path="VisMUI.MSI" Version="1.0" ProductCode="{90120000-0055-0401-0000-0000000FF1CE}" MSIVersion="12.0.4518.1014" Platform="x86">
+	<Feature Id="Gimme_OnDemandData" Cost="0">
+		<OptionRef Id="Gimme_OnDemandData"/>
+	</Feature>
+	<Feature Id="SetupExeArpEntry" Cost="0">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="SetupExeAddRegistry" Cost="0">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="MsoInstalledPackagesScopedIntl_1025" Cost="0">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="VisMUIFiles" Cost="13878618">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="OSetupController" Cost="7256344">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="SetupControllerFiles" Cost="7260936">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="SetupXmlFiles" Cost="4592">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+</Package>

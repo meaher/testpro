@@ -1,0 +1,260 @@
+<!-- #include file="portal_Header.asp"-->
+
+<%
+set Conn=server.createobject("ADODB.Connection")
+Conn.open ConnString
+
+if request.querystring("id")<>"" then 
+
+	Depart_ID=int(request.querystring("id"))
+
+	set Conn=server.createobject("ADODB.Connection")
+	Conn.open ConnString
+	set Rs=server.createobject("ADODB.Recordset")
+	Rs.open "select * from Departments where Department_ID="&Depart_ID&" " , Conn,1,2
+	if not Rs.eof then
+		Department_Name=rs("Department_Name")
+	else
+		response.write "<script>alert('Õ’· Œÿ√ ›Ì ⁄—÷ «·»Ì«‰« ')</script>"
+	end if
+	
+	rs.close
+	set rs=nothing
+	
+end if
+
+%>
+<body style="text-align: center">
+<table class=" w3-left w3-hide-large w3-hover-cyan w3-large w3-theme" border="0" width="100%" id="table1"  style="border-style: solid; background-color: #FFFFFF !important">
+				<tr>
+					<td>
+						
+					<table style="width: 98%" cellspacing="0" cellpadding="0">
+						
+							<tr>
+								<td  valign="top" background="images/defaul8.gif">
+										<!--#include file="Banner_mobile.asp"-->
+								</td>
+							</tr>
+							<tr>
+								<td style="height: 84px" valign="top" background="images/defaul8.gif">
+									
+					<!-- #include file="Banner_Page_mob.asp"-->
+				</td>
+							</tr>
+							<tr>
+								<td style="height: 84px" valign="top" align="center" background="images/defaul8.gif">
+	<table border="0" width="98%" cellspacing="0" cellpadding="0" dir="rtl">
+			<tr>
+				<td valign="top">
+				<!-- #include file="portal_menu.asp"-->				
+				<p>&nbsp;</p>
+				<p>&nbsp;</td>
+				<td width="70%" valign="top">
+				<!-- Start Contents -->
+				<p style="text-align: right"><a href="Depart_list.asp?start=1">
+				 √ﬁ”«„ «·„œ—”…</a> &gt; Õ–›
+				
+				<div align="center">
+				
+				<script>
+				function ValidateData(){
+				
+					var txtAdminUser=	document.frmData.txtAdminUser.value;
+					var txtAdminPwd= 	document.frmData.txtAdminPwd.value;
+					var Validate=		true;
+					//var ddlAdminLevel= 	document.frmData.ddlAdminLevel.options[document.frmData.ddlAdminLevel.options.selectedIndex].value
+					
+					if (txtAdminUser==""){
+						document.frmData.txtAdminUser.style.borderColor="red"
+						document.frmData.txtAdminUser.style.borderStyle="solid"
+						document.frmData.txtAdminUser.style.borderWidth=2
+						Validate=false;
+					}
+					else{
+						document.frmData.txtAdminUser.style.clear	
+						document.frmData.txtAdminUser.style.borderColor="lightgray"
+						document.frmData.txtAdminUser.style.borderStyle="solid"
+						document.frmData.txtAdminUser.style.borderWidth=1									
+					}
+						
+					if (txtAdminPwd==""){
+						document.frmData.txtAdminPwd.style.borderColor="red"
+						document.frmData.txtAdminPwd.style.borderStyle="solid"
+						document.frmData.txtAdminPwd.style.borderWidth=2
+						Validate=false;
+					}			
+					else{
+						document.frmData.txtAdminPwd.style.borderColor="lightgray"
+						document.frmData.txtAdminPwd.style.borderStyle="solid"
+						document.frmData.txtAdminPwd.style.borderWidth=1
+					}
+					
+					if (Validate==false){
+						return false;
+					}
+
+							
+				}
+				</script>
+					<form action="Depart_chk.asp" method="post" name="frmData" id="frmData" onsubmit="return ValidateData()"  enctype="multipart/form-data">
+						<input type="hidden" name="txtDepartID" value="<%=Depart_ID%>">
+						<input type="hidden" name="txtProcType" value="Delete">
+						
+						<table class="tblDataControl" cellpadding="3" cellspacing="0" dir="rtl">
+							<thead>
+								<td colspan="2" class="tdHeadDataControl">
+								 ⁄œÌ·</td>
+							</thead>
+							<tr>
+								<td class="tdDataControlL">«”„ «·ﬁ”„</td>
+								<td class="tdDataControlR"><%=Department_name%></td>
+							</tr>
+							<tr>
+								<td class="tdDataControlL">
+								<font color="#FF0000"> ‰»ÌÂ</font></td>
+								<td>
+								<font color="#FF0000">”Ì „ Õ–› »Ì«‰«  „”ƒÊ· 
+								«·ﬁ”„  ·ﬁ«∆Ì« ⁄‰œ Õ–› «·ﬁ”„<br>
+								·Ì „ Õ–› «·ﬁ”„ ÌÃ» Õ–› Ã„Ì⁄ «·„÷«›Ì‰ œ«Œ· «·ﬁ”„ 
+								À„  ﬁÊ„ »Õ–› «·ﬁ”„</font></td>
+							</tr>
+							<tr>
+								<td class="tdDataControlL">&nbsp;</td>
+								<td>
+								<input type="submit" value="Õ–› «·»Ì«‰« " name="tbnSubmit" class="button">
+								<input type="button" value="⁄ÊœÂ ··Œ·›" name="tbnBack" class="button" onclick="document.location='Depart_list.asp?start=1'"></td>
+							</tr>
+							</table>
+					</form>
+				</div>
+				<!-- End Contents -->
+</td>
+			</tr>
+		</table>										<p>&nbsp;</td>
+							</tr>
+							<tr>
+								<td style="height: 84px" valign="bottom" align="center">
+						<!--#include file="Footer_mobile.asp"-->
+
+								</td>
+							</tr>
+						</table>
+					</td>
+					
+				</tr>
+			</table>
+
+
+<table class="w3-hide-medium w3-hide-small" border="0" width="100%"  cellspacing="0" cellpadding="0" style="border-style: solid; background-color: #F9FCFF !important">
+	<tr>
+	<td>
+										<!--#include file="Banner.asp"-->
+	</td>
+	</tr>
+	<tr>
+		<td align="center">
+		<!-- #include file="Banner_page.asp"-->				
+		<table border="0" width="98%" cellspacing="0" cellpadding="0" dir="rtl">
+			<tr>
+				<td valign="top">			
+				<!-- #include file="portal_menu.asp"-->				
+				</td>
+				<td width="80%" valign="top">
+				<!-- Start Contents -->
+				<p style="text-align: right"><a href="Depart_list.asp?start=1">
+				 √ﬁ”«„ «·„œ—”…</a> &gt; Õ–›
+				
+				<div align="center">
+				
+				<script>
+				function ValidateData(){
+				
+					var txtAdminUser=	document.frmData.txtAdminUser.value;
+					var txtAdminPwd= 	document.frmData.txtAdminPwd.value;
+					var Validate=		true;
+					//var ddlAdminLevel= 	document.frmData.ddlAdminLevel.options[document.frmData.ddlAdminLevel.options.selectedIndex].value
+					
+					if (txtAdminUser==""){
+						document.frmData.txtAdminUser.style.borderColor="red"
+						document.frmData.txtAdminUser.style.borderStyle="solid"
+						document.frmData.txtAdminUser.style.borderWidth=2
+						Validate=false;
+					}
+					else{
+						document.frmData.txtAdminUser.style.clear	
+						document.frmData.txtAdminUser.style.borderColor="lightgray"
+						document.frmData.txtAdminUser.style.borderStyle="solid"
+						document.frmData.txtAdminUser.style.borderWidth=1									
+					}
+						
+					if (txtAdminPwd==""){
+						document.frmData.txtAdminPwd.style.borderColor="red"
+						document.frmData.txtAdminPwd.style.borderStyle="solid"
+						document.frmData.txtAdminPwd.style.borderWidth=2
+						Validate=false;
+					}			
+					else{
+						document.frmData.txtAdminPwd.style.borderColor="lightgray"
+						document.frmData.txtAdminPwd.style.borderStyle="solid"
+						document.frmData.txtAdminPwd.style.borderWidth=1
+					}
+					
+					if (Validate==false){
+						return false;
+					}
+
+							
+				}
+				</script>
+					<form action="Depart_chk.asp" method="post" name="frmData" id="frmData" onsubmit="return ValidateData()"  enctype="multipart/form-data">
+						<input type="hidden" name="txtDepartID" value="<%=Depart_ID%>">
+						<input type="hidden" name="txtProcType" value="Delete">
+						
+						<table class="tblDataControl" cellpadding="3" cellspacing="0" dir="rtl">
+							<thead>
+								<td colspan="2" class="tdHeadDataControl">
+								 ⁄œÌ·</td>
+							</thead>
+							<tr>
+								<td class="tdDataControlL">«”„ «·ﬁ”„</td>
+								<td class="tdDataControlR"><%=Department_name%></td>
+							</tr>
+							<tr>
+								<td class="tdDataControlL">
+								<font color="#FF0000"> ‰»ÌÂ</font></td>
+								<td>
+								<font color="#FF0000">”Ì „ Õ–› »Ì«‰«  „”ƒÊ· 
+								«·ﬁ”„  ·ﬁ«∆Ì« ⁄‰œ Õ–› «·ﬁ”„<br>
+								·Ì „ Õ–› «·ﬁ”„ ÌÃ» Õ–› Ã„Ì⁄ «·„÷«›Ì‰ œ«Œ· «·ﬁ”„ 
+								À„  ﬁÊ„ »Õ–› «·ﬁ”„</font></td>
+							</tr>
+							<tr>
+								<td class="tdDataControlL">&nbsp;</td>
+								<td>
+								<input type="submit" value="Õ–› «·»Ì«‰« " name="tbnSubmit" class="button">
+								<input type="button" value="⁄ÊœÂ ··Œ·›" name="tbnBack" class="button" onclick="document.location='Depart_list.asp?start=1'"></td>
+							</tr>
+							</table>
+					</form>
+				</div>
+				<!-- End Contents -->
+</td>
+			</tr>
+		</table>
+&nbsp;<p>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+			<!--#include file="Footer.asp"-->
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>
+<%
+conn.close
+set conn=nothing
+%>

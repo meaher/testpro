@@ -1,0 +1,168 @@
+﻿/* General Format */
+body         { font-family: Tahoma; font-size: 10pt; color: #000000 ; margin:5px}
+td,p         { font-family: Tahoma; font-size: 10pt; color: #000000 }
+
+/* Forms */
+INPUT, SELECT, TEXTAREA         { font-family: Tahoma; font-size: 9pt; color: #000000 }
+.textBox { font-family: Tahoma; font-size: 9pt; color: #000000; width:200px; border: 1px solid lightgray}
+.button	 { font-family: Tahoma; font-size: 9pt; color: #000000; }
+.select	 { font-family: Tahoma; font-size: 9pt; color: #000000; width:200px; border: 1px solid lightgray}
+.textarea{ font-family: Tahoma; font-size: 9pt; color: #000000; width:550px; border: 1px solid lightgray; height:100px}
+
+/* Links */
+a:link       { font-family: Tahoma; font-size: 10pt; color: #0033CC; text-decoration: none }
+a:visited       { font-family: Tahoma; font-size: 10pt; color: #0033CC; text-decoration: none }
+a:active       { font-family: Tahoma; font-size: 10pt; color: #0033CC; text-decoration: none }
+a:hover       { font-family: Tahoma; font-size: 10pt; color: #336699; text-decoration: underline }
+
+a:link.menu       { font-family: Tahoma; font-size: 10pt; color: #336699; text-decoration: none }
+a:visited.menu	{ font-family: Tahoma; font-size: 10pt; color: #336699; text-decoration: none }
+a:active.menu	{ font-family: Tahoma; font-size: 10pt; color: #336699; text-decoration: none }
+a:hover.menu	{ font-family: Tahoma; font-size: 10pt; color: #000000; text-decoration: underline }
+
+a:link.control       { font-family: Tahoma; font-size: 9pt; color: #336699; text-decoration: none }
+a:visited.control       	{ font-family: Tahoma; font-size: 9pt; color: #336699; text-decoration: none }
+a:active.control       	{ font-family: Tahoma; font-size: 9pt; color: #336699; text-decoration: none }
+a:hover.control       	{ font-family: Tahoma; font-size: 9pt; color: #000000; text-decoration: none }
+
+/* Table Main */
+table.tblMain{
+	width:990px;
+	height:100%;
+	color: #000000; 
+	border: 1px solid #A8C5FF; 
+	background-color: #FFFFFF;
+}
+td.tdMain{
+	padding:10px;
+	width:760px;
+}
+td.tdHeader{
+	height:20px;
+}
+td.tdMainMenu{
+	width:230px;
+	padding:5px;
+}
+
+/* Table View */
+table.tblView{
+	width:100%;
+	border-collapse: collapse;
+	border:1px solid #2C5885; 
+	background-color: #FFFFFF;
+}
+td.tdViewHead{
+	background-color: #336699;
+	color:#FFFFFF;
+}
+tr.tdViewChangeF{
+	background-color: #ECF1FF;
+}
+tr.tdViewChangeS{
+	background-color: #FFFFFF;
+}
+td.tdView{
+	border-top:1px solid #2C5885; 
+	border-bottom:1px solid #2C5885; 
+}
+
+/* Table Menu*/
+table.tblMenu{
+	width:100%;
+	border-collapse: collapse;
+	border:1px solid #2C5885; 
+	background-color: #FFFFFF;
+}
+td.tdMenuHead{
+	background-color: #336699;
+	color:#FFFFFF;
+	text-align:center; 
+	font-weight:bold;
+}
+td.tdMenu{
+	border-top:1px solid #2C5885; 
+	border-bottom:1px solid #2C5885; 
+	background-color:#DDE6F7;
+	padding-right:10px;
+}
+
+/* Table Pagging*/
+table.tblPagging{
+	width:100%;
+	border-collapse: collapse;
+	border:0px solid #FFFFFF; 
+	background-color: #FFFFFF;
+}
+td.tdPaggingL{
+	border-bottom:1px solid #2C5885; 
+	background-color:#DDE6F7;
+	padding-right:10px;
+	height:40px;
+	color:#000000;
+	font-size:8pt;
+	text-align:left;
+}
+td.tdPaggingR{
+	border-bottom:1px solid #2C5885;
+	background-color:#DDE6F7;
+	padding-right:10px;
+	height:40px;
+	color:#000000;
+	font-size:8pt;
+	text-align:right;
+}
+a:link.pagging    { font-family: Tahoma; font-size: 9pt; color: #0033CC; text-decoration: none }
+a:visited.pagging { font-family: Tahoma; font-size: 9pt; color: #0033CC; text-decoration: none }
+a:active.pagging  { font-family: Tahoma; font-size: 9pt; color: #0033CC; text-decoration: none }
+a:hover.pagging   { font-family: Tahoma; font-size: 9pt; color: #336699; text-decoration: underline }
+
+/* Table Data Control */
+table.tblDataControl{
+	width:100%;
+	border-collapse: collapse;
+	border:1px solid #2C5885; 
+	background-color: #FFFFFF;
+}
+td.tdHeadDataControl{
+	background-color: #336699;
+	color:#FFFFFF;
+}
+td.tdDataControlR{
+	border-bottom:1px solid #D5E2FF; 
+	background-color: #FFFFFF;
+	padding-right:10px;
+	color:#000000;
+	font-size: 10pt;
+}
+td.tdDataControlL{
+	border-bottom:1px solid #D5E2FF; 
+	background-color: #ECF1FF;
+	padding-right:10px;
+	color:#000000;
+	font-size: 10pt;
+	width:150px;
+}
+
+
+/* Special Titles & Paraghraph */
+.PageTitle{
+	font-size: 10pt; 
+	font-family: Tahoma; 
+	color: #3366CC; 
+	font-weight: bold;
+	height:30px;
+	text-align:right;
+}
+.RecordAdd{
+	height:20px;
+}
+.ErrMsg{
+	padding-top:5px;
+	font-size: 10pt; 
+	font-family: Tahoma; 
+	color: green; 
+	text-align:center;
+	height:25px;
+	background-color: #ECF1FF;
+}

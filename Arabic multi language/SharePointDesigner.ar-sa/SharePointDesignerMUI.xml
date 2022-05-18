@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--_SIG=KNLEizwyi8K2zrQAg6ZsG+ryRkZktSvG1mzIYmP4b5wZFwrJb0kUYBGJFn8Kq9aHSFKdfHfZoxHNXy5koq5QxnGe0dgJ5MxwRK4TO+SIYcokkC/ZpAzDB4lf6+F/6wecffofRFUaWWD0Xx1pn42ZcIHe2uT6wxxEjaARXAzgyk0=-->
+<Package Id="SharePointDesignerMUI.ar-sa" Type="MSI" Path="SharePointDesignerMUI.MSI" Version="1.0" ProductCode="{90120000-0017-0401-0000-0000000FF1CE}" MSIVersion="12.0.4518.1014" Platform="x86">
+	<Feature Id="Gimme_OnDemandData" Cost="0">
+		<OptionRef Id="Gimme_OnDemandData"/>
+	</Feature>
+	<Feature Id="MsoInstalledPackagesScopedIntl_1025" Cost="0">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="FPClientNonBootFilesIntl_1025" Cost="329548">
+		<OptionRef Id="WAC"/>
+	</Feature>
+	<Feature Id="WAC_RootIntl_1025" Cost="106687">
+		<OptionRef Id="WAC"/>
+	</Feature>
+	<Feature Id="WAC_EditorIntlSPD_1025" Cost="2281672">
+		<OptionRef Id="WAC_SPD"/>
+	</Feature>
+	<Feature Id="VisualStudio_PreviewServerIntlSPD_1025" Cost="205351">
+		<OptionRef Id="VisualStudio_PreviewServer_SPD"/>
+	</Feature>
+	<Feature Id="WAC_HelpFilesIntlSPD_1025" Cost="10775656">
+		<OptionRef Id="WAC_HelpFiles_SPD"/>
+	</Feature>
+	<Feature Id="WAC_CoreIntlSPD_1025" Cost="2587886">
+		<OptionRef Id="WAC_SPD"/>
+	</Feature>
+	<Feature Id="SetupXmlFiles" Cost="3605">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="SetupControllerFiles" Cost="3605">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="FPLangSupportIntl_1025" Cost="2725118">
+		<OptionRef Id="WAC"/>
+	</Feature>
+</Package>

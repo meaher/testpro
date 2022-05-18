@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--_SIG=t+QhJBZZenjriyL+wBHT9CP4EpxqOWBsWPt9EqASYxVvW06e04Ckpx1CAxS3HFVDx+68P/IIVu8X532MgwY9cowGRQAKEb/Rr/JXHf5xvY8fUu5uxecttAWSqYCgnsR6EM+JofeqoKZMzA9rJQWAlsEte94rBq2hF/rAXP0T3GE=-->
+<Setup Id="PMUI.ar-sa" Type="Product" LanguagePack="yes" ProductCode="{90120000-00B5-0401-0000-0000000FF1CE}">
+	<PIDTemplate Value="82503&amp;amp;lt;````=````=````=````=`````&amp;amp;gt;@@@@@"/>
+	<Option Id="AlwaysInstalled" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="yes" Hidden="yes"/>
+	<Option Id="Gimme_OnDemandData" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="yes" Hidden="yes"/>
+	<PackageRef Path="PMUI.xml"/>
+	<AddOnRef Keyword="OfficeMUI"/>
+	<AddOnRef Keyword="RosebudMUI" Exclude="Vista"/>
+	<AddOnRef Keyword="Proofing"/>
+	<AddOnRef Keyword="Office64MUI" Exclude="Unless64bitOS"/>
+	<AddOnRef Keyword="ProjectMUI"/>
+	<AddOnRef Keyword="XMUI.ar-sa"/>
+	<RMCCP FilePath="VISIO.MSI" MinSize="1000000" MaxSize="6500000" MinMajorVer="0" MinMinorVer="0" MaxMajorVer="0" MaxMinorVer="0"/>
+	<RMCCP FilePath="VISIOCORE.MSI" MinSize="200000" MaxSize="6500000" MinMajorVer="0" MinMinorVer="0" MaxMajorVer="0" MaxMinorVer="0"/>
+	<RMCCP FilePath="VISPRO.MSI" MinSize="1000000" MaxSize="6500000" MinMajorVer="0" MinMinorVer="0" MaxMajorVer="0" MaxMinorVer="0"/>
+	<RMCCP FilePath="VISPROR.MSI" MinSize="1000000" MaxSize="6500000" MinMajorVer="0" MinMinorVer="0" MaxMajorVer="0" MaxMinorVer="0"/>
+	<RMCCP FilePath="VISSTD.MSI" MinSize="1000000" MaxSize="6500000" MinMajorVer="0" MinMinorVer="0" MaxMajorVer="0" MaxMinorVer="0"/>
+	<RMCCP FilePath="VISSTDR.MSI" MinSize="1000000" MaxSize="6500000" MinMajorVer="0" MinMinorVer="0" MaxMajorVer="0" MaxMinorVer="0"/>
+	<RMCCP FilePath="PRJPROE.MSI" MinSize="1000000" MaxSize="6500000" MinMajorVer="0" MinMinorVer="0" MaxMajorVer="0" MaxMinorVer="0"/>
+	<RMCCP FilePath="PRJPRO.MSI" MinSize="1000000" MaxSize="6500000" MinMajorVer="0" MinMinorVer="0" MaxMajorVer="0" MaxMinorVer="0"/>
+	<RMCCP FilePath="PRJSTDE.MSI" MinSize="1000000" MaxSize="6500000" MinMajorVer="0" MinMinorVer="0" MaxMajorVer="0" MaxMinorVer="0"/>
+	<RMCCP FilePath="PRJSTD.MSI" MinSize="1000000" MaxSize="6500000" MinMajorVer="0" MinMinorVer="0" MaxMajorVer="0" MaxMinorVer="0"/>
+	<INSTALLLOCATION Value="%PROGRAMFILES%\Microsoft Office"/>
+	<PIDKEY Value="GRXPPJRYBX7JWJBM2H2CG486T"/>
+	<LocalCache DownloadCode="{90120000-00B5-0401-0000-0000000FF1CE}" SkuComponentDirectory="PMUI.ar-sa">
+		<File Id="PMUI.xml" MD5="9FA474EB7F701B40ACAD549E8054B712" Size="1189" RelativeCachePath="PMUI.xml" RelativeSourcePath="PMUI.xml"/>
+		<File Id="PMUI.msi" MD5="B40FE44D76C254307FAAC4DDF9253023" Size="561664" RelativeCachePath="PMUI.msi" RelativeSourcePath="PMUI.msi"/>
+		<File Id="PMUI.cab" MD5="5CDEE011982755CC1E4D67B098DC7008" Size="4316897" RelativeCachePath="PMUI.cab" RelativeSourcePath="PMUI.cab"/>
+		<File Id="setup.exe" MD5="95B8A4245A6CD37D36E56FAE5A23E2B1" Size="463152" RelativeCachePath="setup.exe" RelativeSourcePath="..\setup.exe"/>
+		<File Id="osetup.dll" MD5="C0FEAA8B015DFA39963A2DC576EE4316" Size="6536992" RelativeCachePath="osetup.dll" RelativeSourcePath="osetup.dll"/>
+		<File Id="ose.exe" MD5="5A432A042DAE460ABE7199B758E8606C" Size="145184" RelativeCachePath="ose.exe" RelativeSourcePath="ose.exe"/>
+		<File Id="Setup.xml" MD5="" Size="" RelativeCachePath="Setup.xml" RelativeSourcePath="Setup.xml"/>
+	</LocalCache>
+</Setup>

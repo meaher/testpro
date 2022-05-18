@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--_SIG=pAmbsz0fmKrCiDg0VAMbMG7o7HSqdnACdcM6ihyN8JmW8fECZrBuuoU1UhFZ9XgWcaXvVb8gXC3iSpEYTl1kIGTLCW5TYhrKnbE1nAHnxPyb2Z1fI3TMwdzVvxE6mt5o6IjFxDrddxFwKCNa4ICS9xpAMSZ8j+vu4EBYsagt+Ww=-->
+<Package Id="AccessMUI.ar-sa" Type="MSI" Path="AccessMUI.MSI" Version="1.0" ProductCode="{90120000-0015-0401-0000-0000000FF1CE}" MSIVersion="12.0.4518.1014" Platform="x86">
+	<Feature Id="CalendarControlIntl_1025" Cost="182901">
+		<OptionRef Id="CalendarControl"/>
+	</Feature>
+	<Feature Id="Gimme_OnDemandData" Cost="0">
+		<OptionRef Id="Gimme_OnDemandData"/>
+	</Feature>
+	<Feature Id="ACCESSFilesIntl_1025" Cost="2093080">
+		<OptionRef Id="ACCESSFiles"/>
+	</Feature>
+	<Feature Id="AccessTemplatesIntl_1025" Cost="8402392">
+		<OptionRef Id="AccessTemplatesIntl"/>
+	</Feature>
+	<Feature Id="ACCESSNonBootFilesIntl_1025" Cost="1278581">
+		<OptionRef Id="ACCESSFiles"/>
+	</Feature>
+	<Feature Id="MsoInstalledPackagesScopedIntl_1025" Cost="0">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="AccessHelpFilesIntl_1025" Cost="22367305">
+		<OptionRef Id="AccessHelpFiles"/>
+	</Feature>
+	<Feature Id="SetupControllerFiles" Cost="3125">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+	<Feature Id="SetupXmlFiles" Cost="3125">
+		<OptionRef Id="AlwaysInstalled"/>
+	</Feature>
+</Package>

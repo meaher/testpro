@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--_SIG=dKyVixtc5m/LmQnNG1Q4jObzB+1ATZ5F2A0D5zKAjX3zwkwlhNOyzBEmsXDUCdTTeyxwiYrAugyvITJ/ZkfNX7ym7IASOfSFxRlvNJuz4QZ/NSDmSZbNYmKqnvX6/NqRIaIRZZdcmeklLUpPG1FgojrclYncykpzJwgE6IFfOyE=-->
+<Setup Id="XMUI.ar-sa" Type="AddOn" Keyword="XMUI.ar-sa" Culture="ar-sa">
+	<Option Id="AlwaysInstalled" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="yes" Hidden="yes"/>
+	<Option Id="Gimme_OnDemandData" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="yes" Hidden="yes"/>
+	<PackageRef Path="XMUI.xml"/>
+	<LocalCache DownloadCode="{90120000-0101-0401-0000-0000000FF1CE}" SkuComponentDirectory="XMUI.ar-sa">
+		<File Id="XMUI.xml" MD5="1EAC0BD69977A7F2D1D857DB1EFF7760" Size="805" RelativeCachePath="XMUI.xml" RelativeSourcePath="XMUI.xml"/>
+		<File Id="XMUI.msi" MD5="0C524034E4E2FC165E2B05329A0F4F05" Size="501248" RelativeCachePath="XMUI.msi" RelativeSourcePath="XMUI.msi"/>
+		<File Id="Setup.xml" MD5="" Size="" RelativeCachePath="Setup.xml" RelativeSourcePath="Setup.xml"/>
+	</LocalCache>
+</Setup>

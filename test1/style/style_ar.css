@@ -1,0 +1,33 @@
+body         { color: #000000; margin:0px; font-family:tahoma; font-size:10pt; direction:ltr; background-image:url('images/Fastion_10.jpg') }
+p,td         { color: #FFFFFF; font-family:tahoma; font-size:10pt }
+input, select, textarea        { color: #000000; font-family:tahoma; font-size:9pt }
+input,select {width: 200px}
+textarea          {width: 400px; height:100px}
+
+.button {width:auto}
+
+/*Daleel Links*/
+a:link.daleel       { font-family: Tahoma; font-size: 10pt; color: #FFFFFF; text-decoration: none }
+a:visited.daleel       { font-family: Tahoma; font-size: 10pt; color: #FFFFFF; text-decoration: none }
+a:active.daleel       { font-family: Tahoma; font-size: 10pt; color: #FFFFFF; text-decoration: none }
+a:hover.daleel       { font-family: Tahoma; font-size: 10pt; color: #FFFFFF; text-decoration: Underline }
+
+/*General Links*/
+a:link		{ font-family: Tahoma; font-size: 10pt; color: #ffffff; text-decoration: none }
+a:visited	{ font-family: Tahoma; font-size: 10pt; color: #ffffff; text-decoration: none }
+a:active	{ font-family: Tahoma; font-size: 10pt; color: #ffffff; text-decoration: none }
+a:hover		{ font-family: Tahoma; font-size: 10pt; color: #FFCC00; text-decoration: underline }
+
+/*Menu Links*/
+a:link.menu       { font-family: Tahoma; font-size: 9pt; color: #FFFFFF; text-decoration: none }
+a:visited.menu    { font-family: Tahoma; font-size: 9pt; color: #FFFFFF; text-decoration: none }
+a:active.menu     { font-family: Tahoma; font-size: 9pt; color: #FFFFFF; text-decoration: none }
+a:hover.menu      { font-family: Tahoma; font-size: 9pt; color: #cccccc; text-decoration: none }
+
+.newmenu{
+	color: #FFFFFF;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	text-align: right;
+	width: 200px;
+}

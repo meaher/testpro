@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--_SIG=a28b7bz7k3z9/0BuWxKPXX8W7YPzJVg6WUsUYNYAgL/C78azRrUxW0q6Newb3Qu012vfQaanenA7tzvwht7oaHYueczzOL/YP9hV/uYUotAALva7VCwovNNO4Uq6WzLr1tYT/0pojMK/sp4nSkosTC1vE6ov+koWlfhXoLJoUAs=-->
+<Setup Id="Project.ar-sa" Type="AddOn" Keyword="ProjectMUI" Culture="ar-sa">
+	<Option Id="AlwaysInstalled" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="yes" Hidden="yes"/>
+	<Option Id="Gimme_OnDemandData" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="yes" Hidden="yes"/>
+	<Option Id="ProductFiles" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="no">
+		<Option Id="PROJECTFiles" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no">
+			<Option Id="ProjectHelpFiles" DefaultState="FollowParent" DisallowAbsent="yes" DisallowAdvertise="no" PreReq="IsPrjPro;IsPrjPror;IsMondo" Hidden="yes"/>
+			<Option Id="ProjectStdHelpFiles" DefaultState="Local" DisallowAbsent="yes" DisallowAdvertise="no" PreReq="IsPrjStd;IsPrjStdr" Hidden="yes"/>
+			<Option Id="ProjectTemplates" DefaultState="Local" DisallowAbsent="no" DisallowAdvertise="no"/>
+		</Option>
+	</Option>
+	<PackageRef Path="ProjectMUI.xml"/>
+	<LocalCache DownloadCode="{90120000-00B4-0401-0000-0000000FF1CE}" SkuComponentDirectory="Project.ar-sa">
+		<File Id="ProjectMUI.xml" MD5="0D3BA3DE7B04FCA9548B875AE05BAA72" Size="1459" RelativeCachePath="ProjectMUI.xml" RelativeSourcePath="ProjectMUI.xml"/>
+		<File Id="ProjectMUI.msi" MD5="2C8BE9FF63876717720ECE4C594231D8" Size="1664512" RelativeCachePath="ProjectMUI.msi" RelativeSourcePath="ProjectMUI.msi"/>
+		<File Id="ProjLR.cab" MD5="515016AD02DF6E6C281219EFBE9F6301" Size="10775479" RelativeCachePath="ProjLR.cab" RelativeSourcePath="ProjLR.cab"/>
+		<File Id="Setup.xml" MD5="" Size="" RelativeCachePath="Setup.xml" RelativeSourcePath="Setup.xml"/>
+	</LocalCache>
+</Setup>
